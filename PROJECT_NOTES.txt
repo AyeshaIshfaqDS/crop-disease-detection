@@ -1,0 +1,102 @@
+# PROJECT NOTES
+# Plant Disease Detection using Transformers
+
+================================================================
+ACADEMIC PROJECT
+================================================================
+
+Course: MS Data Science
+Project Type: Semester Assignment
+Domain: Agriculture (Plant Disease Detection)
+Algorithm: Transformers (CNN-Transformer Hybrid)
+SDG: Zero Hunger (SDG 2)
+
+================================================================
+KEY ACHIEVEMENTS
+================================================================
+
+✓ Training Accuracy: 94.61%
+✓ Requirement: 75%+ (EXCEEDED by 19.61%)
+✓ Model: Lightweight (533,926 parameters)
+✓ Training Device: CPU (no GPU needed)
+✓ Dataset: PlantVillage (54,305 images, 38 classes)
+
+================================================================
+TECHNICAL HIGHLIGHTS
+================================================================
+
+Architecture:
+- 3 CNN blocks for feature extraction
+- 2 Transformer encoder layers
+- Multi-head attention (4 heads)
+- CPU-optimized design
+
+Training Configuration:
+- 5 epochs
+- Adam optimizer (lr=0.001)
+- Batch size: 32
+- Training time: ~12-14 hours (CPU)
+- Hardware: Intel i5-1235U, 8GB RAM
+
+Results:
+- Epoch 1: 74.43% → Epoch 5: 94.61%
+- Loss: 0.8439 → 0.1678
+- Consistent improvement (no overfitting)
+
+================================================================
+PROJECT DELIVERABLES
+================================================================
+
+✓ Training notebook with all code
+✓ Model architecture diagram
+✓ Data pipeline visualization
+✓ Training graphs (accuracy + loss)
+✓ Complete documentation (6 sections)
+✓ README.md for GitHub
+✓ Requirements.txt for setup
+✓ 18+ GitHub commits
+
+================================================================
+DESIGN DECISIONS
+================================================================
+
+Why Lightweight Model?
+- Real-world deployment focus
+- Accessible to farmers (mobile devices)
+- No GPU dependency
+
+Why 5 Epochs?
+- Early stopping best practice
+- Efficient convergence
+- Prevents overfitting
+- Sufficient for this dataset
+
+Why CPU Training?
+- Demonstrates accessibility
+- Resource-constrained learning
+- Anyone can reproduce
+- No expensive hardware needed
+
+================================================================
+CHALLENGES & LEARNINGS
+================================================================
+
+Challenges Faced:
+- Long training time on CPU (~12-14 hours)
+- Jupyter save errors (OneDrive sync issues)
+- Memory management with 8GB RAM
+- Balancing accuracy vs training time
+
+Solutions Implemented:
+- Patient training overnight
+- Regular commits for backup
+- Efficient batch size (32)
+- Lightweight architecture design
+
+Key Learnings:
+- CPU training is viable for academic projects
+- Lightweight models can achieve high accuracy
+- Proper planning essential for time management
+- Documentation as important as code
+
+================================================================
