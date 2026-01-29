@@ -1,0 +1,106 @@
+# PROJECT CONFIGURATION SUMMARY
+# Plant Disease Detection using Transformers
+
+================================================================
+TRAINING CONFIGURATION
+================================================================
+
+Model Architecture:
+- Type: CNN-Transformer Hybrid
+- CNN Blocks: 3 (32, 64, 128 filters)
+- Transformer Layers: 2
+- Attention Heads: 4
+- Total Parameters: 533,926
+
+Training Hyperparameters:
+- Optimizer: Adam
+- Learning Rate: 0.001
+- Loss Function: CrossEntropyLoss
+- Batch Size: 32
+- Epochs: 5
+- Device: CPU (Intel i5-1235U)
+
+Data Configuration:
+- Dataset: PlantVillage
+- Total Images: 54,305
+- Training Split: 80% (43,444 images)
+- Testing Split: 20% (10,861 images)
+- Image Size: 224×224 pixels
+- Normalization: ImageNet statistics
+
+================================================================
+FINAL RESULTS
+================================================================
+
+Training Performance:
+- Final Accuracy: 94.61%
+- Final Loss: 0.1678
+- Training Time: ~3-4 hours
+- Requirement: 75%+ accuracy ✓
+- Achievement: Exceeded by 19.61%
+
+Epoch-wise Results:
+| Epoch | Accuracy | Loss   |
+|-------|----------|--------|
+| 1     | 74.43%   | 0.8439 |
+| 2     | 89.29%   | 0.3314 |
+| 3     | 92.43%   | 0.2337 |
+| 4     | 93.62%   | 0.1979 |
+| 5     | 94.61%   | 0.1678 |
+
+================================================================
+SYSTEM REQUIREMENTS
+================================================================
+
+Hardware:
+- Processor: Intel i5 or equivalent
+- RAM: 8GB minimum
+- Storage: 10GB free space
+- GPU: Not required (CPU-optimized)
+
+Software:
+- Python: 3.14.2
+- PyTorch: 2.9.1
+- NumPy: 2.3.5
+- Pandas: 2.3.3
+- Matplotlib: 3.10.8
+- Jupyter Notebook: Latest
+
+================================================================
+PROJECT DELIVERABLES
+================================================================
+
+Code & Models:
+✓ Training notebook (plant_disease_model.ipynb)
+✓ Model architecture (533,926 parameters)
+✓ Training results (94.61% accuracy)
+
+Documentation:
+✓ README.md
+✓ Project_Documentation.txt
+✓ PROJECT_STRUCTURE.txt
+✓ Requirements.txt
+
+Visualizations:
+✓ model_architecture.png
+✓ data_pipeline.png
+✓ training_graphs.png
+
+Repository:
+✓ GitHub: AyeshaIshfaqDS/crop-disease-detection
+✓ Commits: 17+ commits
+✓ Clean structure with .gitignore
+
+================================================================
+FUTURE ENHANCEMENTS
+================================================================
+
+Potential Improvements:
+- Implement testing on holdout set
+- Add confusion matrix visualization
+- Create web/mobile application
+- Expand to more crop varieties
+- Add multi-language support
+- Integrate treatment recommendations
+
+================================================================
