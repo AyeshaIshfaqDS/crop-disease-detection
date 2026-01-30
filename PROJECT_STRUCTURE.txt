@@ -1,0 +1,112 @@
+# PROJECT STRUCTURE
+# Plant Disease Detection using Transformers
+
+CropDiseaseDetection/
+│
+├── plant_disease_model.ipynb      # Main training notebook
+│   ├── Data Loading & Exploration
+│   ├── Preprocessing Pipeline
+│   ├── Model Architecture
+│   ├── Training Loop
+│   └── Results & Evaluation
+│
+├── model_architecture.png          # Model architecture diagram
+├── data_pipeline.png               # Data pipeline visualization
+├── training_graphs.png             # Training metrics graphs
+│
+├── Project_Documentation.txt       # Complete project documentation
+├── README.md                       # Project overview
+├── requirements.txt                # Python dependencies
+├── .gitignore                      # Git ignore rules
+│
+├── Dataset/
+│   └── PlantVillage/
+│       └── color/
+│           ├── Tomato_Early_blight/
+│           ├── Tomato_Late_blight/
+│           ├── Potato_Early_blight/
+│           └── ... (38 classes total)
+│
+└── Documentation/
+    ├── Model Architecture Details
+    ├── Training Methodology
+    ├── Results Analysis
+    └── Future Improvements
+
+================================================================
+
+KEY FILES DESCRIPTION:
+
+1. plant_disease_model.ipynb
+   - Complete training pipeline
+   - All code cells documented
+   - Training results included
+   - Ready for reproduction
+
+2. model_architecture.png
+   - Visual representation of CNN-Transformer hybrid
+   - Shows layer dimensions
+   - Parameter count included
+
+3. data_pipeline.png
+   - End-to-end data flow
+   - Preprocessing steps
+   - Training pipeline visualization
+
+4. training_graphs.png
+   - Accuracy progression (74% → 94.61%)
+   - Loss reduction (0.84 → 0.17)
+   - Visual proof of convergence
+
+5. Project_Documentation.txt
+   - Introduction & Objectives
+   - Complete Methodology
+   - Technology & Business Benefits
+   - Conclusions & Future Work
+
+6. README.md
+   - Quick project overview
+   - Key features & results
+   - Technology stack
+   - Setup instructions
+
+7. requirements.txt
+   - All Python dependencies
+   - Version numbers included
+   - Easy environment setup
+
+================================================================
+
+MODEL SPECIFICATIONS:
+
+Architecture: CNN-Transformer Hybrid
+Parameters: 533,926
+Input: 224×224×3 RGB images
+Output: 38 disease classes
+Training Device: CPU (Intel i5-1235U)
+Training Time: ~3-4 hours
+Final Accuracy: 94.61%
+
+================================================================
+
+DATASET DETAILS:
+
+Source: PlantVillage Dataset
+Total Images: 54,305
+Training Set: 43,444 (80%)
+Testing Set: 10,861 (20%)
+Image Size: 224×224 pixels
+Color Space: RGB
+Classes: 38 plant diseases
+
+================================================================
+
+DEVELOPMENT ENVIRONMENT:
+
+Language: Python 3.14.2
+Framework: PyTorch 2.9.1
+IDE: Jupyter Notebook
+Version Control: Git & GitHub
+OS: Windows 11
+
+================================================================
